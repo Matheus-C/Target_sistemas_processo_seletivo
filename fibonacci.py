@@ -1,11 +1,11 @@
 def fib(numero):
-    ultimoNumero = 0
-    numeroAtual = 1
+    ultimoNumero = 0 #o numero anterior ao atual encontrado, utilizado para calcular o próximo número atual
+    numeroAtual = 1 # o número encontrado na ultima iteração
     if numero == 0:
         return True
     while numeroAtual < numero:
-        aux = numeroAtual
-        numeroAtual = ultimoNumero + numeroAtual
+        aux = numeroAtual # guarda o numero atual para colocar na posicao de ultimo numero
+        numeroAtual = ultimoNumero + numeroAtual #calcula o novo numero atual
         ultimoNumero = aux
     if numeroAtual == numero:
         return True
